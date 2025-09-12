@@ -31,7 +31,7 @@ const ModernPresentation = () => {
   ];
 
   return (
-    <section className="ModernPresentation bg-gray-200 rounded-2xl md:flex md:items-center md:justify-center md:w-[1400px] md:mx-auto overflow-hidden">
+    <section className="ModernPresentation bg-gray-200 rounded-2xl md:flex md:items-center md:justify-center md:w-[1400px] md:mx-auto overflow-hidden py-5">
       {/* Left site */}
       <div className="grid grid-cols-1 space-y-4 justify-center items-center py-20 md:grid-cols-2 md:w-[50%]">
         {cardData.map((card, index) => (
