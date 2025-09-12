@@ -8,7 +8,7 @@ import Herosection from "./Component/HeroSection/Herosection"
 
 function App() {
   return (
-    <>
+    < >
       <Navbar/>
       <Herosection/>
     </>
