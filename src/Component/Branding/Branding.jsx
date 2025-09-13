@@ -26,7 +26,7 @@ const Branding = () => {
     useEffect(() => {
         let AutoSlide = setInterval(() => {
             Nextdes();
-        }, 3000);
+        }, 7000);
         return () => clearInterval(AutoSlide);
     }, []);
 
@@ -98,6 +98,7 @@ const Branding = () => {
                         </button>
                     </div>
                 </motion.div>
+            
 
             </section>
         </>
