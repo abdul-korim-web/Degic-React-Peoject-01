@@ -5,6 +5,7 @@ import Herosection from "./Component/HeroSection/Herosection"
 import ModernPresentation from "./Component/modernPresentation/ModernPresentation"
 import Branding from './Component/Branding/Branding'
 import Promotion from './Component/Promotion/Promotion'
+import Illustrations from './Component/Illustrations/Illustrations'
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <ModernPresentation/>
       <Branding/>
       <Promotion/>
+      <Illustrations/>
     </>
 
   )
