@@ -6,6 +6,8 @@ import ModernPresentation from "./Component/modernPresentation/ModernPresentatio
 import Branding from './Component/Branding/Branding'
 import Promotion from './Component/Promotion/Promotion'
 import Illustrations from './Component/Illustrations/Illustrations'
+import MakeMoreTime from './Component/MakeMoreTime/MakeMoreTime'
+import Presentation from './Component/Presentations/Presentation'
 
 
 
@@ -19,6 +21,8 @@ function App() {
       <Branding/>
       <Promotion/>
       <Illustrations/>
+      <MakeMoreTime/>
+      <Presentation/>
     </>
 
   )
