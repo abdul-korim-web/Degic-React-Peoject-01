@@ -9,6 +9,7 @@ import Illustrations from './Component/Illustrations/Illustrations'
 import MakeMoreTime from './Component/MakeMoreTime/MakeMoreTime'
 import Presentation from './Component/Presentations/Presentation'
 import HomeBlog from './Component/Blog/HomeBlog'
+import Footer from './Component/Footer/Footer'
 
 
 
@@ -25,6 +26,7 @@ function App() {
       <MakeMoreTime/>
       <Presentation/>
       <HomeBlog/>
+      <Footer/>
     </>
 
   )
