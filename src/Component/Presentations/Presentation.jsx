@@ -34,7 +34,7 @@ const Presentation = () => {
                   marginRight: "10px",
                 }}
               >
-                Contained
+                Get Started
               </Button>
               <Button
                 variant="contained"
@@ -45,7 +45,7 @@ const Presentation = () => {
                   fontWeight: "500",
                 }}
               >
-                Contained
+                Learn More
               </Button>
             </div>
           </motion.div>

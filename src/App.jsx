@@ -8,6 +8,7 @@ import Promotion from './Component/Promotion/Promotion'
 import Illustrations from './Component/Illustrations/Illustrations'
 import MakeMoreTime from './Component/MakeMoreTime/MakeMoreTime'
 import Presentation from './Component/Presentations/Presentation'
+import HomeBlog from './Component/Blog/HomeBlog'
 
 
 
@@ -23,6 +24,7 @@ function App() {
       <Illustrations/>
       <MakeMoreTime/>
       <Presentation/>
+      <HomeBlog/>
     </>
 
   )
