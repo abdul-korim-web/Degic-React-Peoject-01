@@ -4,7 +4,7 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const BlogCardTamplate = (props) => {
     let Blogcardresponce =()=>{
-        alert(`This is a Demo React Project . So blog card Not Responce View More Project ${`https://github.com/abdul-korim-web/abdul-korim-web`}`)
+        alert(`This Is a Demo React Project . So Blog Card Is Not Responce To View. More Project ${`https://github.com/abdul-korim-web/abdul-korim-web`}`)
     }
   return (
     <>
