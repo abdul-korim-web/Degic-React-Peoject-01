@@ -77,7 +77,13 @@ Experience the app live: [https://react-basic-from-and-money-tracker-pr.netlify.
 
 
 ## Project Overview Video
-[![Watch the video](public/image/maxresdefault (1).jpg)](public/video/PageVideo.mp4)
+## 🎥 Demo Video
+
+<video controls width="800" poster="public/image/maxresdefault (1).jpg">
+  <source src="public/video/PageVideo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 
 
 
