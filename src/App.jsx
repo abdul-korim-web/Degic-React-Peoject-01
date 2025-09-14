@@ -9,6 +9,7 @@ import About from './Component/About/About'
 import Services from './Component/MyService/Service'
 import Project from "./Component/MyProject/Project"
 import ContactPage from './Component/ContactPage/ContactPage'
+import SignUpPage from './Component/Singup/singup'
 
 
 
@@ -25,6 +26,7 @@ function App() {
         <Route path='/service' element={<Services/>}/>
         <Route path='/project' element={<Project/>}/>
         <Route path='/contact' element={<ContactPage/>}/>
+        <Route path='/singup' element={<SignUpPage/>}/>
 
         
 
