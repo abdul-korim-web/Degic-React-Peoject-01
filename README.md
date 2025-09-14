@@ -1,12 +1,114 @@
-# React + Vite
+# React React Degic  Peoject
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+A modern **React.js** based web project showcasing my journey as a web developer.  
+This project demonstrates **responsive UI design**, **animations**, and **routing** with advanced tools like **Tailwind CSS**, **Framer Motion**, and **Material UI**.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Fully **responsive design** (Mobile, Tablet & Desktop)  
+- ✅ **React Router** for smooth navigation  
+- ✅ **Framer Motion animations** for UI interactions  
+- ✅ **Material UI AppBar & Drawer** integration  
+- ✅ Different sections:
+  - 🏠 Home  
+  - 👨‍💻 About Me  
+  - 🛠️ Services  
+  - 📂 Projects  
+  - 📞 Contact  
+  - 🔑 Sign Up  
+
+---
+## 🚀 Live Demo
+
+Experience the app live: [https://react-basic-from-and-money-tracker-pr.netlify.app/](https://react-basic-from-and-money-tracker-pr.netlify.app/)
+
+## 🧱 Technologies Used
+
+- <img src="https://raw.githubusercontent.com/github/explore/main/topics/html/html.png" width="24" height="24" style="vertical-align: middle; margin-right: 5px;" /> **HTML5** – For structuring the content.
+- <img src="https://raw.githubusercontent.com/github/explore/main/topics/tailwind/tailwind.png" width="24" height="24" style="vertical-align: middle; margin-right: 5px;" /> **TailwindCSS** – For responsive and modern styling.
+- <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" width="24" height="24" style="vertical-align: middle; margin-right: 5px;" /> **JavaScript** – For dynamic functionality and DOM manipulation.
+- <img src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" width="24" height="24" style="vertical-align: middle; margin-right: 5px;" /> **React** – For building interactive UI components.
+- <img src="https://v1.mui.com/static/images/material-ui-logo.svg" width="24" height="24" style="vertical-align: middle; margin-right: 5px;" /> **Material UI** – For ready-to-use UI components and styling.
+- <img src="https://v1.mui.com/static/images/material-ui-logo.svg" width="24" height="24" style="vertical-align: middle; margin-right: 5px;" /> **Framer Motion
+** – for a declarative, high-performance, and intuitive way to create animations and gestures in React applications.
+
+
+
+## 🔧 Features
+
+### 🌐 Responsive Navbar
+- Built with **Material UI AppBar + Drawer**
+- **Framer Motion animations** on scroll and hover
+- **React Router Dom** integrated for smooth navigation
+- Dynamic **Sign Up button**
+
+---
+
+### 🛠️ Services Page
+- Showcases your **skills (HTML, CSS, JavaScript, React, Tailwind, Git, GitHub)**
+- Animated cards with hover effects
+- Responsive grid layout
+
+---
+
+### 📂 Projects Section
+- Dynamic project cards fetched from **your GitHub repo**
+- Project preview with **cover images**
+- **Learn More** button linking directly to GitHub repository
+
+---
+
+### 📞 Contact Page
+- Profile image with social media links (**GitHub, LinkedIn, Facebook**)
+- Contact form with **Name, Email, Message**
+- Framer Motion animations for smooth UI experience
+- Responsive design for mobile 📱 and desktop 💻
+
+---
+
+### 🔑 Sign Up Page
+- Clean UI built with **Tailwind + Framer Motion**
+- Input fields for user registration
+- Mobile-first responsive design
+- Animated form interactions
+
+
+## Project Overview Video
+<video
+          controls
+          className='rounded-2xl w-[95%] md:w-[85%]'
+          src="public/video/PageVideo.mp4"
+          poster="public/image/maxresdefault (1).jpg" // Thumbnail
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        />
+
+
+
+
+
+## 🚀👤 Author
+👉 GitHub: [abdul-korim-web](https://github.com/abdul-korim-web) <br>
+👉 Facebook: [abdul-korim-web](https://www.facebook.com/abdulkorimweb) <br>
+👉 LinkedIn: [abdul-korim-web](https://www.linkedin.com/in/abdul-korim-web/) <br>
+
+---
+
+## 📜 License & Copyright
+
+© 2025 Degic Portfolio Project.  
+All rights reserved.  
+
+This project is developed by **Abdul Korim**.  
+Unauthorized use, copy, modification, or distribution of this project is strictly prohibited without prior permission.  
+
+For collaboration or inquiries, contact:  
+📧 Email: abdulkorimwebdeveloper@gmail.com <br> 
+👉 GitHub: [abdul-korim-web](https://github.com/abdul-korim-web) <br>
+👉 Facebook: [abdul-korim-web](https://www.facebook.com/abdulkorimweb) <br>
+👉 LinkedIn: [abdul-korim-web](https://www.linkedin.com/in/abdul-korim-web/) <br>
