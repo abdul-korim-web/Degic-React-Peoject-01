@@ -77,16 +77,7 @@ Experience the app live: [https://react-basic-from-and-money-tracker-pr.netlify.
 
 
 ## Project Overview Video
-<video
-          controls
-          className='rounded-2xl w-[95%] md:w-[85%]'
-          src="public/video/PageVideo.mp4"
-          poster="public/image/maxresdefault (1).jpg" // Thumbnail
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        />
+[![Watch the video](public/image/maxresdefault (1).jpg)](public/video/PageVideo.mp4)
 
 
 
