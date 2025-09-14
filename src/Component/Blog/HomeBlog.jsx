@@ -3,8 +3,13 @@ import Button from '@mui/material/Button';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import BlogCardTamplate from "../BlogCardTamplate/BlogCardTamplate";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const HomeBlog = () => {
+  let native = useNavigate()
+  const HomeBlogExploreAllBtn =()=>{
+    native(`/project`)
+  }
     const HomeBlogpost=[
         {
             image:"image/Group 41.png",
@@ -37,7 +42,7 @@ const HomeBlog = () => {
             </p>
           </div>
           <div className="hidden md:flex">
-            <Button
+            <Button onClick={HomeBlogExploreAllBtn}
               variant="contained"
               sx={{
                 background: "#2AB691",

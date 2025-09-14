@@ -98,17 +98,17 @@ const Footer = () => {
         </div>
         <div className="text-white text-xl flex gap-4">
           <motion.button whileHover={{ scale: 1.2 }}>
-            <a href="">
+            <a href="https://www.facebook.com/abdulkorimweb" target="_blanck">
               <i className="fa-brands fa-facebook"></i>
             </a>
           </motion.button>
           <motion.button whileHover={{ scale: 1.2 }}>
-            <a href="">
+            <a href="https://github.com/abdul-korim-web" target="_blanck">
               <i className="fa-brands fa-github"></i>
             </a>
           </motion.button>
           <motion.button whileHover={{ scale: 1.2 }}>
-            <a href="">
+            <a href="https://www.linkedin.com/in/abdul-korim-web/" target="_blanck">
               <i className="fa-brands fa-linkedin"></i>
             </a>
           </motion.button>

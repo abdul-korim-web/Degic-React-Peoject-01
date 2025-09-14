@@ -1,8 +1,16 @@
 import React from "react";
 import Button from "@mui/material/Button";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const Presentation = () => {
+  let native = useNavigate()
+  const PresentationGetStartedBtn =()=>{
+    native(`/contacts`)
+  }
+  const PresentationLearnMoreBtn =()=>{
+    native(`/service`)
+  }
   return (
     <>
       <section className="presentation bg-[#5F62E2] py-10 md:py-0 rounded-2xl mb-10 md:mb-20 md:justify-around items-center ">
@@ -24,7 +32,7 @@ const Presentation = () => {
               The quickest way to create awesome presentation
             </h2>
             <div className="flex flex-wrap space-x-3">
-              <Button
+              <Button onClick={PresentationGetStartedBtn}
                 variant="contained"
                 sx={{
                   background: "#2AB691",
@@ -36,7 +44,7 @@ const Presentation = () => {
               >
                 Get Started
               </Button>
-              <Button
+              <Button onClick={PresentationLearnMoreBtn}
                 variant="contained"
                 sx={{
                   background: "#777AE6",

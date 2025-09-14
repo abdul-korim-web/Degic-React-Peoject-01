@@ -1,8 +1,16 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Button from '@mui/material/Button';
+import { useNavigate } from 'react-router-dom';
 
 const Herosection = () => {
+  let native = useNavigate()
+  const GetStartedBtn = ()=>{
+    native(`/service`)
+  }
+  const LearnMoreBtn =()=>{
+    native(`/about`)
+  }
   return (
     <>
       <section className="Hero flex flex-col justify-center items-center space-y-5 md:flex-row w-full md:px-20 md:justify-center pb-15 md:pb-20">
@@ -42,7 +50,7 @@ const Herosection = () => {
             viewport={{ once: false, amount: 0.3 }}
           >
             <motion.div whileHover={{ scale: 1.05 }}>
-              <Button
+              <Button onClick={GetStartedBtn}
                 sx={{
                   background: "#5F62E2",
                   borderRadius: "10px",
@@ -56,7 +64,7 @@ const Herosection = () => {
             </motion.div>
 
             <motion.div whileHover={{ scale: 1.05 }}>
-              <Button
+              <Button onClick={LearnMoreBtn}
                 sx={{
                   background: "#5F62E226",
                   borderRadius: "10px",
