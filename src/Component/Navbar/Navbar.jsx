@@ -15,42 +15,50 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { motion } from 'framer-motion';
+import { NavLink } from 'react-router-dom';
 
 const drawerWidth = 240;
-const navItems = ['About', 'Service', 'Project', 'Contacts'];
+const navItems = [
+  { item: 'Home', to: '/' },
+  { item: 'About', to: '/about' },
+  { item: 'Service', to: '/service' },
+  { item: 'Project', to: '/project' },
+  { item: 'Contacts', to: '/contacts' }
+];
 
 function DrawerAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
 
-  const handleDrawerToggle = () => {
-    setMobileOpen((prevState) => !prevState);
-  };
+  const handleDrawerToggle = () => setMobileOpen(!mobileOpen);
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        <img src="/image/Logo.png" alt="Logo Image" />
+        <a href="/" className='cursor-pointer'><img src="/image/Logo.png" alt="Logo" /></a>
       </Typography>
       <Divider />
       <List>
         {navItems.map((item, index) => (
           <motion.div
-            key={item}
+            key={item.item}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.1 }}
-            viewport={{ once: false, amount: 0.2 }} // 👈 scroll trigger every time
+            viewport={{ once: false, amount: 0.2 }}
           >
             <ListItem disablePadding>
               <ListItemButton
+                component={NavLink}
+                to={item.to}
                 sx={{
                   textAlign: 'center',
+                  '&.active': { color: '#29005A', fontWeight: 'bold' },
                   transition: 'all 0.3s ease-in-out',
-                  '&:hover': { transform: 'scale(1.05)', color: '#29005A' },
+                  '&:hover': { transform: 'scale(1.05)', color: '#29005A' }
                 }}
               >
-                <ListItemText primary={item} />
+                <ListItemText primary={item.item} />
               </ListItemButton>
             </ListItem>
           </motion.div>
@@ -62,6 +70,8 @@ function DrawerAppBar(props) {
           viewport={{ once: false, amount: 0.2 }}
         >
           <Button
+            component={NavLink}
+            to="/signup"
             variant="contained"
             sx={{
               bgcolor: '#29005A',
@@ -69,7 +79,7 @@ function DrawerAppBar(props) {
               mt: 2,
               borderRadius: '10px',
               transition: 'all 0.3s ease-in-out',
-              '&:hover': { bgcolor: '#3f007f', transform: 'translateY(-3px)' },
+              '&:hover': { bgcolor: '#3f007f', transform: 'translateY(-3px)' }
             }}
           >
             Sign Up
@@ -110,12 +120,12 @@ function DrawerAppBar(props) {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-              <img src="/image/Logo.png" alt="Logo Image" />
+              <a href="/" className='cursor-pointer'><img src="/image/Logo.png" alt="Logo" /></a>
             </Typography>
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map((item, index) => (
                 <motion.div
-                  key={item}
+                  key={item.item}
                   initial={{ opacity: 0, y: -20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.15 }}
@@ -123,14 +133,17 @@ function DrawerAppBar(props) {
                   style={{ display: 'inline-block' }}
                 >
                   <Button
+                    component={NavLink}
+                    to={item.to}
                     sx={{
                       color: 'black',
                       mx: 1,
+                      '&.active': { color: '#29005A', fontWeight: 'bold' },
                       transition: 'all 0.3s ease-in-out',
-                      '&:hover': { transform: 'scale(1.1)', color: '#29005A' },
+                      '&:hover': { transform: 'scale(1.1)', color: '#29005A' }
                     }}
                   >
-                    {item}
+                    {item.item}
                   </Button>
                 </motion.div>
               ))}
@@ -142,13 +155,15 @@ function DrawerAppBar(props) {
                 style={{ display: 'inline-block' }}
               >
                 <Button
+                  component={NavLink}
+                  to="/singup"
                   variant="contained"
                   sx={{
                     bgcolor: '#29005A',
                     color: 'white',
                     borderRadius: '10px',
                     transition: 'all 0.3s ease-in-out',
-                    '&:hover': { bgcolor: '#3f007f', transform: 'translateY(-3px)' },
+                    '&:hover': { bgcolor: '#3f007f', transform: 'translateY(-3px)' }
                   }}
                 >
                   Sign Up
@@ -168,7 +183,7 @@ function DrawerAppBar(props) {
           ModalProps={{ keepMounted: true }}
           sx={{
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth }
           }}
         >
           {drawer}
@@ -182,7 +197,7 @@ function DrawerAppBar(props) {
 }
 
 DrawerAppBar.propTypes = {
-  window: PropTypes.func,
+  window: PropTypes.func
 };
 
 export default DrawerAppBar;
