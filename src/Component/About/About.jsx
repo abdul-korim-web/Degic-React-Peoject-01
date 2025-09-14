@@ -26,7 +26,7 @@ const About = () => {
           viewport={{ once: false }}
         >
           <img
-            src="https://i.pravatar.cc/400?img=3"
+            src="image/myPhoto.jpg"
             alt="Profile"
             className="rounded-3xl shadow-2xl w-72 md:w-full border-4 border-purple-300"
           />
@@ -61,11 +61,11 @@ const About = () => {
           </div>
 
           {/* Contact Button */}
-          <motion.button
+          <motion.button 
             className="mt-6 bg-purple-900 text-white px-6 py-3 rounded-lg font-mono hover:bg-purple-700 hover:-translate-y-1 transition-all duration-300 shadow-lg"
             whileHover={{ scale: 1.05 }}
           >
-            Contact Me
+            <a href="https://www.linkedin.com/in/abdul-korim-web/" target="_blank">Contact Me</a>
           </motion.button>
         </motion.div>
       </div>
