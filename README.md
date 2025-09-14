@@ -25,6 +25,10 @@ This project demonstrates **responsive UI design**, **animations**, and **routin
 
 Experience the app live: [https://degic-react-peoject.netlify.app/](https://degic-react-peoject.netlify.app/)
 
+## 🚀 View Figma File Desing
+
+Experience the Figna File: [View Figma File](https://www.figma.com/design/nZ5IljhQNiur5awS9Gwl85/Degic?node-id=0-1&p=f&t=63nLrhICYPg1Pysx-0)
+
 ## 🧱 Technologies Used
 
 - <img src="https://raw.githubusercontent.com/github/explore/main/topics/html/html.png" width="24" height="24" style="vertical-align: middle; margin-right: 5px;" /> **HTML5** – For structuring the content.
