@@ -23,7 +23,7 @@ This project demonstrates **responsive UI design**, **animations**, and **routin
 ---
 ## 🚀 Live Demo
 
-Experience the app live: [https://react-basic-from-and-money-tracker-pr.netlify.app/](https://react-basic-from-and-money-tracker-pr.netlify.app/)
+Experience the app live: [https://degic-react-peoject.netlify.app/](https://degic-react-peoject.netlify.app/)
 
 ## 🧱 Technologies Used
 
